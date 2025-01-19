@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary_bg: #04040c;
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-primaryBg;
+  }
+}

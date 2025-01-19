@@ -8,7 +8,11 @@ export default {
     container:{
       center:true,
     },
-    extend: {},
+    extend: {
+      colors:{
+        primaryBg:"var(--primary_bg)"
+      }
+    },
   },
   plugins: [],
 }
