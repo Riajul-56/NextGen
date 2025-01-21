@@ -5,19 +5,19 @@ import logo from "../assets/logo.png";
 
 let menu = [
   {
-    name: Home,
+    name: "Home",
     link: "/",
   },
   {
-    name: Marketplace,
+    name: "Marketplace",
     link: "/Marketplace",
   },
   {
-    name: Artist,
+    name: "Artist",
     link: "/Artist",
   },
   {
-    name: Community,
+    name: "Community",
     link: "/Community",
   },
 ];
@@ -31,9 +31,11 @@ const Navbar = () => {
             <img src={logo} />
           </div>
           <menu>
-            <ul className="flex text-white gap-14">
+            <ul className="flex text-white gap-14 font-mon text-xl">
               {menu.map((item, index) => (
-                <li key={item.name}>{item.name}</li>
+                <li key={item.name} className="font-mon">
+                  <a href={item.link}>{item.name}</a>
+                </li>
               ))}
             </ul>
           </menu>

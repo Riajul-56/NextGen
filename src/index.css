@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --primary_font:"Montserrat";
   --primary_bg: #04040c;
 }
 

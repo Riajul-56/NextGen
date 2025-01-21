@@ -1,3 +1,5 @@
+import { root } from 'postcss';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -11,6 +13,9 @@ export default {
     extend: {
       colors:{
         primaryBg:"var(--primary_bg)"
+      },
+      fontFamily:{
+        mon:"var(--primary_font)",
       }
     },
   },
