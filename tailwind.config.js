@@ -12,7 +12,8 @@ export default {
     },
     extend: {
       colors:{
-        primaryBg:"var(--primary_bg)"
+        primaryBg:"var(--primary_bg)",
+        primaryText:"var(--primary_text)"
       },
       fontFamily:{
         mon:"var(--primary_font)",

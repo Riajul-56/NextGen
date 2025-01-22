@@ -31,10 +31,15 @@ const Navbar = () => {
             <img src={logo} />
           </div>
           <menu>
-            <ul className="flex text-white gap-14 font-mon text-xl">
+            <ul className="flex  gap-14 ">
               {menu.map((item, index) => (
-                <li key={item.name} className="font-mon">
-                  <a href={item.link}>{item.name}</a>
+                <li key={item.name}>
+                  <a
+                    href={item.link}
+                    className="font-mon text-xl font-medium text-[#F0F0F0] hover:text-primaryText transition-colors"
+                  >
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>

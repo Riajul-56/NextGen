@@ -5,6 +5,7 @@
 :root {
   --primary_font:"Montserrat";
   --primary_bg: #04040c;
+  --primary_text:#BC61F3;
 }
 
 @layer base {
