@@ -3,14 +3,43 @@
 @tailwind utilities;
 
 :root {
-  --primary_font:"Montserrat";
+  --primary_font: "Montserrat";
   --primary_bg: #04040c;
-  --primary_text:#BC61F3;
+  --primary_text: #bc61f3;
+  --second_text: #f0f0f0;
 }
 
 @layer base {
   html,
   body {
     @apply bg-primaryBg;
+  }
+}
+
+@layer utilities {
+  .btnlinear {
+    border: 5px solid transparent;
+    background: linear-gradient(
+      0deg,
+      rgba(188, 97, 243, 1) 0%,
+      rgba(92, 67, 246, 1) 100%
+    );
+    background-origin: border-box;
+    background-clip: border-box;
+  }
+  .gradient_border {
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+      0deg,
+      rgb(188, 97, 243, 1) 0%,
+      rgba(92, 67, 246, 1) 100%
+    );
+    border-image-slice: 1;
+  }
+}
+
+@layer components {
+  .navItem {
+    @apply font-mon text-xl font-medium text-secondText hover:text-primaryText transition-colors relative after:content-[''] after:w-0 after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full after:transition-all;
   }
 }

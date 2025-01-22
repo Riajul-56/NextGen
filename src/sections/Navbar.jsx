@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import Flex from "../components/Flex";
 import logo from "../assets/logo.png";
+import Button from "../components/Button";
 
 let menu = [
   {
@@ -24,7 +25,7 @@ let menu = [
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="py-[42px]">
       <Container>
         <Flex className="items-center justify-between">
           <div>
@@ -34,16 +35,17 @@ const Navbar = () => {
             <ul className="flex  gap-14 ">
               {menu.map((item, index) => (
                 <li key={item.name}>
-                  <a
-                    href={item.link}
-                    className="font-mon text-xl font-medium text-[#F0F0F0] hover:text-primaryText transition-colors"
-                  >
+                  <a href={item.link} className="navItem">
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
           </menu>
+          <Flex className="gap-[17px]">
+            <Button text={"log in"} />
+            <Button text={"Sign up"} bgShow={false} />
+          </Flex>
         </Flex>
       </Container>
     </nav>

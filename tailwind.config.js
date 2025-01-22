@@ -13,7 +13,8 @@ export default {
     extend: {
       colors:{
         primaryBg:"var(--primary_bg)",
-        primaryText:"var(--primary_text)"
+        primaryText:"var(--primary_text)",
+        secondText:"var(--second_text)"
       },
       fontFamily:{
         mon:"var(--primary_font)",
