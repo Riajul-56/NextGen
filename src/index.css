@@ -45,6 +45,9 @@
 
 @layer components {
   .navItem {
-    @apply font-mon text-xl font-medium text-secondText hover:text-primaryText transition-colors relative after:content-[''] after:w-0 after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full after:transition-all;
+    @apply font-mon text-xl font-medium text-secondText relative ;
+  }
+  .activeNavItem {
+    @apply text-primaryText  after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full;
   }
 }

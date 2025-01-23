@@ -2,13 +2,14 @@ import React from "react";
 import Container from "../components/Container";
 import Flex from "../components/Flex";
 import Button from "../components/Button";
+import bannerImg from "../assets/banner.png";
 
 const Banner = () => {
   return (
-    <section>
+    <section className="py-[53px]">
       <Container>
-        <Flex>
-          <div className="max-w-[806px]">
+        <Flex className="items-center">
+          <div className="max-w-[785px]">
             <h1 className="font-black text-white text-8xl banner_heading tracking-wider">
               Best NFTs Marketplace.
             </h1>
@@ -22,9 +23,13 @@ const Banner = () => {
               <Button text={"Create NFTs"} bgShow={false} />
             </Flex>
           </div>
-          <div>
-            {/* <img src={bannerImg} /> */}
-          </div>
+          <Flex className="rounded-full max-w-[750px] max-h-[750px] overflow-hidden justify-center bg-[#869BDF] border-4 border-[#17152c] relative">
+            <img src={bannerImg} />
+            <div
+              className="absolute w-full
+            h-full bg-[rgba(18,12,40,0.26) z-0]"
+            ></div>
+          </Flex>
         </Flex>
       </Container>
     </section>

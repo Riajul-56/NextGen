@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Flex from "../components/Flex";
 import logo from "../assets/logo.png";
 import Button from "../components/Button";
-
+import { NavLink } from "react-router";
 
 let menu = [
   {
@@ -36,9 +36,14 @@ const Navbar = () => {
             <ul className="flex  gap-14 ">
               {menu.map((item, index) => (
                 <li key={item.name}>
-                  <a href={item.link} className="navItem">
+                  <NavLink
+                    to={item.link}
+                    className={({ isActive }) =>
+                      isActive ? "navItem activeNavItem" : "navItem"
+                    }
+                  >
                     {item.name}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
