@@ -12,7 +12,7 @@
 @layer base {
   html,
   body {
-    @apply bg-primaryBg;
+    @apply bg-primaryBg text-secondText font-mon;
   }
 }
 
@@ -35,6 +35,11 @@
       rgba(92, 67, 246, 1) 100%
     );
     border-image-slice: 1;
+  }
+  .banner_heading {
+    background-image: url("./assets/textImag.png");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
