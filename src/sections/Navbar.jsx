@@ -26,14 +26,14 @@ let menu = [
 
 const Navbar = () => {
   return (
-    <nav className="py-[42px]">
+    <nav className="py-[42px] relative z-40">
       <Container>
         <Flex className="items-center justify-between">
           <div>
             <img src={logo} />
           </div>
           <menu>
-            <ul className="flex  gap-14 ">
+            <ul className="flex gap-14 ">
               {menu.map((item, index) => (
                 <li key={item.name}>
                   <NavLink

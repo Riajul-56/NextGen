@@ -7,6 +7,7 @@
   --primary_bg: #04040c;
   --primary_text: #bc61f3;
   --second_text: #f0f0f0;
+  --text_title:#F2F2F2;
 }
 
 @layer base {
@@ -45,7 +46,7 @@
 
 @layer components {
   .navItem {
-    @apply font-mon text-xl font-medium text-secondText relative;
+    @apply font-mon text-xl font-medium text-secondText relative ;
   }
   .activeNavItem {
     @apply text-primaryText  after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full;

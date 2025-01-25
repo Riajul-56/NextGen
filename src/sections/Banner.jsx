@@ -6,11 +6,11 @@ import bannerImg from "../assets/banner.png";
 
 const Banner = () => {
   return (
-    <section className="pt-[53px]">
+    <section className="pt-[53px] relative z-50">
       <Container>
         <Flex className="items-center">
           <div className="max-w-[785px]">
-            <h1 className="font-black text-white text-8xl banner_heading tracking-wider">
+            <h1 className="font-black tracking-wider text-white text-8xl banner_heading">
               Best NFTs Marketplace.
             </h1>
             <p className="text-xl mt-8 mb-[60px] leading-[183%] max-w-[765px]">

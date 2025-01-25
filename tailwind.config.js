@@ -14,7 +14,8 @@ export default {
       colors:{
         primaryBg:"var(--primary_bg)",
         primaryText:"var(--primary_text)",
-        secondText:"var(--second_text)"
+        secondText:"var(--second_text)",
+        textTitle:"var(--text_title)",
       },
       fontFamily:{
         mon:"var(--primary_font)",
