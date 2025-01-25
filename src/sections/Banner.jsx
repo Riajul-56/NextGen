@@ -6,7 +6,7 @@ import bannerImg from "../assets/banner.png";
 
 const Banner = () => {
   return (
-    <section className="py-[53px]">
+    <section className="pt-[53px]">
       <Container>
         <Flex className="items-center">
           <div className="max-w-[785px]">

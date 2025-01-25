@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router";
 
-const Button = ({ text, link = "/", className, bgShow = true }) => {
+const Button = ({ text, link = "/", className = " ", bgShow = true }) => {
   return (
-    <a
+    <Link
       href={link}
       className={`${
         bgShow ? "btnlinear" : "gradient_border"
@@ -10,7 +11,7 @@ const Button = ({ text, link = "/", className, bgShow = true }) => {
          ${className}`}
     >
       {text}
-    </a>
+    </Link>
   );
 };
 
