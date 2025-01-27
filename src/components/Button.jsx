@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-const Button = ({ text, link = "/", className = " ", bgShow = true }) => {
+const Button = ({ text, link = "/", className = "", bgShow = true }) => {
   return (
     <Link
       href={link}

@@ -7,18 +7,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    container:{
-      center:true,
+    container: {
+      center: true,
     },
     extend: {
-      colors:{
-        primaryBg:"var(--primary_bg)",
-        primaryText:"var(--primary_text)",
-        secondText:"var(--second_text)",
-        textTitle:"var(--text_title)",
+      colors: {
+        primaryBg: "var(--primary_bg)",
+        primaryText: "var(--primary_text)",
+        secondText: "var(--second_text)",
+        textTitle: "var(--text_title)",
       },
-      fontFamily:{
-        mon:"var(--primary_font)",
+      fontFamily: {
+        mon: "var(--primary_font)",
       }
     },
   },

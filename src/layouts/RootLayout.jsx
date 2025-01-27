@@ -3,12 +3,12 @@ import Navbar from "../sections/Navbar";
 import { Outlet } from "react-router";
 
 const RootLayout = () => {
-  return(
+  return (
     <>
-    <Navbar/>
-    <Outlet/>
+      <Navbar />
+      <Outlet />
     </>
-  )
+  );
 };
 
 export default RootLayout;
