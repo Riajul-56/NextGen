@@ -7,7 +7,7 @@ const Button = ({ text, link = "/", className = "", bgShow = true }) => {
       href={link}
       className={`${
         bgShow ? "btnlinear" : "gradient_border"
-      } py-4 px-11 font-mon text-xl text-secondText font-medium
+      } py-4 px-11 font-mon text-xl text-second_text font-medium
          ${className}`}
     >
       {text}

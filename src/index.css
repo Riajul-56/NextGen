@@ -50,7 +50,7 @@
     -webkit-text-fill-color: transparent;
   }
   .navItem {
-    @apply relative text-xl font-medium font-primary_font text-secondText;
+    @apply relative text-xl font-medium font-primary_font text-second_text;
   }
   .activeNavItem {
     @apply text-primary_text  after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full;
