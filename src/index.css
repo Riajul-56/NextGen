@@ -1,23 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --primary_font: "Montserrat";
-  --primary_bg: #04040c;
-  --primary_text: #bc61f3;
-  --second_text: #f0f0f0;
-  --text_title: #f2f2f2;
+@theme {
+  --font-primary_font: "Montserrat";
+  --color-primary_bg: #04040c;
+  --color-primary_text: #bc61f3;
+  --color-second_text: #f0f0f0;
+  --color-text_title: #f2f2f2;
 }
 
+.container {
+  margin-inline: auto;
+}
 @layer base {
-  html,
-  body {
-    @apply bg-primaryBg text-secondText font-mon;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
 }
+.container {
+  margin: auto;
+}
 
-@layer utilities {
+@layer components {
   .btnlinear {
     border: 5px solid transparent;
     background: linear-gradient(
@@ -42,13 +49,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-}
-
-@layer components {
   .navItem {
-    @apply relative text-xl font-medium font-mon text-secondText;
+    @apply relative text-xl font-medium font-primary_font text-secondText;
   }
   .activeNavItem {
-    @apply text-primaryText  after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full;
+    @apply text-primary_text  after:content-[''] after:w-full after:h-1 after:absolute after:-bottom-3 after:left-0 after:bg-[#3A3653] after:rounded-2xl hover:after:w-full;
   }
 }
