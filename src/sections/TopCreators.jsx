@@ -13,8 +13,8 @@ const TopCreators = () => {
 
       <Container>
         <Flex className="flex-col items-center">
-          <Title title={"Top Creators"} className="text-center" />
-          <p className="mx-auto text-xl max-w-[678px] text-center my-6 font-normal leading-[183%]">
+          <Title title={"Top Creators"} className="text-center z-50" />
+          <p className="mx-auto text-xl max-w-[678px] text-center my-6 font-normal leading-[183%] z-50">
             In commodo auctor eget congue sit. Ultrices eget pretium sit euismod
             mi id. Risus, aliquam odio posuere ac in in nisl sed augue.
           </p>
