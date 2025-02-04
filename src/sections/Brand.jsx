@@ -34,7 +34,7 @@ const brandImages = [
 const Brand = () => {
   return (
     <section className="pt-[178px] pb-[200px]">
-      <img src={banner_shade} alt="" className="absolute -top-[200px] left-0" />
+      <img src={banner_shade} alt="" className="absolute -top-[90px] left-0" />
       <Container>
         <Flex
           className={`${brandImages.length > 5 && "flex-wrap"} gap-[113px]`}
