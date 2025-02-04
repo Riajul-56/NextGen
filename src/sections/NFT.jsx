@@ -6,7 +6,6 @@ import SliderComponent from "../components/Slider";
 import nft_1 from "../assets/nft_1.png";
 import nft_2 from "../assets/nft_2.png";
 import nft_3 from "../assets/nft_3.png";
-import Button from "../components/Button";
 import collect_1 from "../assets/collect_1.png";
 import collect_2 from "../assets/collect_2.png";
 import collect_3 from "../assets/collect_3.png";
