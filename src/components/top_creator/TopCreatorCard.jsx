@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "../Button";
 
-const TopCreatorCard = () => {
+const TopCreatorCard = ({ text, img }) => {
   return (
-    <div className="max-w-[400px] bg-[#16192A]">
-      <h2>Loura chin</h2>
-      <Button text={"View Details"} />
+    <div className="min-w-92 bg-[#16192A] flex-col items-center pt-12  text-center border border-[#2E3150]">
+      <img src={img} className="w-35 h-35 object-cover mx-auto" />
+      <h2 className="font-extrabold text-[22px] text-center pb-12">{text}</h2>
+      <Button text={"View Details"} className="rounded-xl" />
     </div>
   );
 };

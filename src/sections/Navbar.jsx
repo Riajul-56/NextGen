@@ -26,7 +26,7 @@ let menu = [
 
 const Navbar = () => {
   return (
-    <nav className="py-[42px] relative z-40">
+    <nav className="py-[42px] relative z-50">
       <Container>
         <Flex className="items-center justify-between">
           <div>
