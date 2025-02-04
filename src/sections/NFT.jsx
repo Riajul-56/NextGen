@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Flex from "../components/Flex";
 import Title from "../components/Title";
 import SliderComponent from "../components/Slider";
+import nft_1 from "../assets/nft_1.png";
 import nft_2 from "../assets/nft_2.png";
 import nft_3 from "../assets/nft_3.png";
 import Button from "../components/Button";
@@ -36,9 +37,27 @@ const NFT = () => {
           <Title title={"Collect some NFTs"} className="text-center" />
         </Flex>
         <SliderComponent className="mt-15" settings={settings}>
-          <NFTCard />
-          <NFTCard />
-          <NFTCard />
+          <NFTCard
+            img_1={nft_1}
+            h4={"Lighting Axe"}
+            h5={"0.36 eth"}
+            customar_name={"Loura chin"}
+            img_2={collect_1}
+          />
+          <NFTCard
+            img_1={nft_2}
+            h4={"Skeleton head"}
+            h5={"0.29 eth"}
+            customar_name={"Kelvin glan"}
+            img_2={collect_2}
+          />
+          <NFTCard
+            img_1={nft_3}
+            h4={"Hard breath"}
+            h5={"0.22 eth"}
+            customar_name={"Glam lee"}
+            img_2={collect_3}
+          />
         </SliderComponent>
       </Container>
     </section>
