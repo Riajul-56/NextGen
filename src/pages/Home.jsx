@@ -3,6 +3,7 @@ import Banner from "../sections/Banner";
 import Brand from "../sections/Brand";
 import TopCreators from "../sections/TopCreators";
 import NFT from "../sections/NFT";
+import About from "../sections/About";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Brand />
       <NFT/>
       <TopCreators />
+      <About/>
     </>
   );
 };
