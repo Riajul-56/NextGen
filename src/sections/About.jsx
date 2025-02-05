@@ -3,7 +3,7 @@ import Container from "../components/Container";
 import Flex from "../components/Flex";
 import aboutImg from "../assets/about.png";
 import Button from "../components/Button";
-import aboutshade from "../assets/about_shade.png"
+import aboutshade from "../assets/about_shade.png";
 
 const About = () => {
   return (
