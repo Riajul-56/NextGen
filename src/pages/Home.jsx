@@ -5,6 +5,7 @@ import TopCreators from "../sections/TopCreators";
 import NFT from "../sections/NFT";
 import About from "../sections/About";
 import Collection from "../sections/Collection";
+import Blog from "../sections/Blog";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <TopCreators />
       <About/>
       <Collection/>
+      <Blog/>
     </>
   );
 };
