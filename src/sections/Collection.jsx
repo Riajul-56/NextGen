@@ -10,7 +10,7 @@ const Collection = () => {
       <Container>
         <Flex className="flex-col items-center">
           <Title title={"NFTs collections"} className="text-text_title" />
-          <p className="mt-6 text-center leading-[183%] ">
+          <p className="mt-6 text-center leading-[183%] mb-15">
             Ultrices eget pretium sit euismod mi id posuere ac in in nisl sed
             augue.
           </p>

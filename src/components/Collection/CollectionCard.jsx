@@ -1,15 +1,18 @@
 import React from "react";
-import collection_1 from "../../assets/collection_1.png"
 import { Link } from "react-router";
+import Flex from "../Flex";
 
-const CollectionCard = () => {
+const CollectionCard = ({ img, h2 }) => {
   return (
-    <div>
-      <img src={collection_1} />
-      <h2 className="font-extrabold text-[22px] text-text_title">
-        Broken collection
-      </h2>
-      <Link>View Collection</Link>
+    <div className="bg-[#2E3150]">
+      <img
+        src={img}
+        className="w-[330px] h-[330px] object-cover border border-[#2E3150]"
+      />
+      <Flex className="flex-col items-center">
+        <h2 className="font-extrabold text-[22px] text-text_title">{h2}</h2>
+        <Link className="text-[#BC61F3]">View Collection</Link>
+      </Flex>
     </div>
   );
 };
