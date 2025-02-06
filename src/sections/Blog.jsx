@@ -11,7 +11,7 @@ import blog_4 from "../assets/blog_4.png";
 
 const Blog = () => {
   return (
-    <section>
+    <section className="mb-[200px]" > 
       <Container>
         <Flex className="justify-between items-center mb-15">
           <Title title={"Our Latest Blog"} />
