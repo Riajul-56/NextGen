@@ -4,6 +4,7 @@ import Brand from "../sections/Brand";
 import TopCreators from "../sections/TopCreators";
 import NFT from "../sections/NFT";
 import About from "../sections/About";
+import Collection from "../sections/Collection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <NFT/>
       <TopCreators />
       <About/>
+      <Collection/>
     </>
   );
 };

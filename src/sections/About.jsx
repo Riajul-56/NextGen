@@ -16,7 +16,7 @@ const About = () => {
           </div>
 
           <div className="max-w-[680px]">
-            <h2 className="font-black text-[56px] leading-[121%] ">
+            <h2 className="font-black text-[56px] leading-[121%] text-text_title">
               Subscribe And get Latest news update about NFTs.
             </h2>
             <p className="text-lg font-normal leading-[183%] mt-[35px] mb-15">
