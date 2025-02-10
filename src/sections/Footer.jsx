@@ -7,6 +7,8 @@ import fb from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import twiter from "../assets/twiter.png";
 import youtube from "../assets/youtube.png";
+import linkedin from "../assets/linkedin.png"
+import shadow from "../assets/footer_shadow.png";
 
 let footerData = [
   {
@@ -96,8 +98,9 @@ let footerData = [
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="border-b border-[#535488] pb-[100px] mb-9">
+    <footer className="relative ">
+      <img src={shadow} className="absolute -top-[700px] right-0" />
+      <div className="border-b border-[#535488] pb-[100px] mb-9 ">
         <Container>
           <Flex className="gap-[196px]">
             <div className="w-[400px]">
@@ -106,15 +109,16 @@ const Footer = () => {
                 Ultrices eget pretium sit euismod mi id posuere ac in in nisl
                 sed augue. Posuere ac in in nisl sed augue.
               </p>
-              <Flex className="gap-[13px]  items-center">
+              <Flex className="gap-[13px]">
                 <SocialMedia img={fb} />
                 <SocialMedia img={insta} />
                 <SocialMedia img={twiter} />
+                <SocialMedia img={linkedin} />
                 <SocialMedia img={youtube} />
               </Flex>
             </div>
 
-            <Flex className="gap-[150px]">
+            <Flex className="gap-[150px] z-50">
               {footerData.map((item) => (
                 <div>
                   <h2 className="text-text_title font-black text-[22px] mb-6">
@@ -135,7 +139,11 @@ const Footer = () => {
       </div>
       <div className="text-center p-8">
         <p className="font-normal text-[19px]">
-          © 2022 Copyright <span className="text-second.text font-bold text-[19px]">TemplatesJungle</span> . All rights reserved
+          © 2022 Copyright
+          <span className="text-second.text font-bold text-[19px]">
+            TemplatesJungle
+          </span>
+          . All rights reserved
         </p>
       </div>
     </footer>

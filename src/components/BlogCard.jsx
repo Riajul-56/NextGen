@@ -3,7 +3,7 @@ import Flex from "./Flex";
 
 const BlogCard = ({ img, h6 }) => {
   return (
-    <Flex className="flex-col bg-[#16192A]  border border-[#2E3150] items-center">
+    <Flex className="flex-col bg-[#16192A]  border border-[#2E3150] items-center z-50">
       <img src={img} className="w-[330px] h-[330px]" />
       <div>
         <h6 className="text-primary_text font-medium text-[19px] ">{h6}</h6>
