@@ -10,7 +10,7 @@ const About = () => {
     <section className="mt-[200px] mb-[200px] relative">
       <img src={aboutshade} className="absolute top-[500px] left-0" />
       <Container>
-        <Flex className="justify-between items-center">
+        <Flex className="gap-[49px] items-center">
           <div className="z-50">
             <img src={aboutImg} />
           </div>
