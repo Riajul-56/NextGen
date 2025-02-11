@@ -23,7 +23,7 @@ const Banner = () => {
               <Button text={"Create NFTs"} bgShow={false} />
             </Flex>
           </div>
-          <Flex className="rounded-full max-w-[750px] max-h-[750px] overflow-hidden justify-center bg-[#869BDF] border-4 border-[#17152c] relative">
+          <Flex className="rounded-full max-w-[750px] max-h-[750px] overflow-hidden justify-center bg-[rgb(134,155,223,.08)] border-4 border-[#17152c] relative">
             <img src={bannerImg} />
             <div
               className="absolute w-full

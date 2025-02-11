@@ -8,7 +8,7 @@ import collection_4 from "../../assets/collection_4.png";
 
 const CollectionContainer = () => {
   return (
-    <Flex className="justify-between">
+    <Flex className="gap-5 justify-between">
       <CollectionCard img={collection_1} h2={"Broken collection"} />
       <CollectionCard img={collection_2} h2={"Broken collection"} />
       <CollectionCard img={collection_3} h2={"Broken collection"} />
