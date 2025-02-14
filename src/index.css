@@ -21,9 +21,11 @@
   margin: auto;
  }
  
+
 .slick-slide {
   padding: 0px 25px;
 }
+
 .slick-dots .slick-active div{
   background-color: #D9D8E2;
 }
