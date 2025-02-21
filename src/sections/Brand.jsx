@@ -33,11 +33,11 @@ const brandImages = [
 
 const Brand = () => {
   return (
-    <section className="pt-[178px] pb-[200px]">
+    <section className="pt-[178px] pb-[200px] px-2 MyXl:px-0">
       <img src={banner_shade} alt="" className="absolute -top-[90px] left-0" />
       <Container>
         <Flex
-          className={`${brandImages.length > 5 && "flex-wrap"} gap-[113px]`}
+          className={`${brandImages.length > 5 && "flex-wrap"} gap-[113px] xl:flex-nowrap flex-wrap justify-center items-center`}
         >
           {brandImages.map(({ src, alt }) => (
             <div key={alt}>
