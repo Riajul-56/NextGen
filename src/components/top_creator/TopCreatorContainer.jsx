@@ -8,7 +8,7 @@ import top_4 from "../../assets/top_4.png";
 
 const TopCreatorContainer = () => {
   return (
-    <Flex className="mt-16 gap-5">
+    <Flex className="mt-16 gap-5 flex-col sm:flex-row">
       <TopCreatorCard img={top_1} text={"Loura chin"} />
       <TopCreatorCard img={top_2} text={"Kelvin Glan"} />
       <TopCreatorCard img={top_3} text={"Glam Lee"} />

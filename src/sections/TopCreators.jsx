@@ -8,7 +8,7 @@ import top_shade from "../assets/top_shade.png"
 
 const TopCreators = () => {
   return (
-    <section className="relative mt-[200px]">
+    <section className="relative sm:mt-[200px] mt-[100px] px-2">
       <img src={top_shade} alt="" className="absolute -top-[668px] right-0" />
 
       <Container>
