@@ -11,14 +11,14 @@ import blog_4 from "../assets/blog_4.png";
 
 const Blog = () => {
   return (
-    <section className="mb-[200px]" > 
+    <section className="mb-[200px] px-2 MyXl:px-0 ">
       <Container>
-        <Flex className="justify-between items-center mb-15">
+        <Flex className="justify-between items-center mb-15 md:flex-row flex-col md:gap-0 gap-3">
           <Title title={"Our Latest Blog"} />
           <Button text={"Read our blogs"} />
         </Flex>
 
-        <Flex className="gap-5">
+        <Flex className="gap-5 md:flex-row xl:flex-nowrap flex-wrap sm:justify- ">
           <BlogCard img={blog_1} h6={"Arts"} />
 
           <BlogCard img={blog_2} h6={"Design"} />

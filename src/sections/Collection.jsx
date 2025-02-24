@@ -6,7 +6,7 @@ import CollectionContainer from "../components/Collection/CollectionContainer";
 
 const Collection = () => {
   return (
-    <section className="mb-[200px]">
+    <section className="mb-[200px] px-2 MyXl:px-0">
       <Container>
         <Flex className="flex-col items-center">
           <Title title={"NFTs collections"} className="text-text_title" />
