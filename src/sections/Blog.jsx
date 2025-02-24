@@ -18,7 +18,7 @@ const Blog = () => {
           <Button text={"Read our blogs"} />
         </Flex>
 
-        <Flex className="gap-5 md:flex-row xl:flex-nowrap flex-wrap sm:justify- ">
+        <Flex className="gap-5 md:flex-row xl:flex-nowrap flex-wrap sm:justify-around ">
           <BlogCard img={blog_1} h6={"Arts"} />
 
           <BlogCard img={blog_2} h6={"Design"} />
