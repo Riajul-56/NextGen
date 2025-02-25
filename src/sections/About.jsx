@@ -32,7 +32,7 @@ const About = () => {
               />
               <Button
                 text={"Subscribe"}
-                className="absolute right-2 top-[50%] -translate-y-1/2"
+                className="absolute sm:right-2 right-[90px] sm:top-[50%] top-40 -translate-y-1/2 "
               />
             </form>
           </div>
