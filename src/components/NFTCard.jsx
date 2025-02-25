@@ -5,11 +5,11 @@ import Button from "./Button";
 const NFTCard = ({ img_1, h4, h5, img_2, customar_name }) => {
   return (
     <div>
-      <img src={img_1} className="object-cover" />
+      <img src={img_1} className="object-cover w-full" />
 
       <div className="max-w-[90%] mx-auto bg-text_title p-6 rounded-4xl -translate-y-22">
         <Flex className="flex-col">
-          <Flex className="justify-between font-extrabold text-[22px] text-primary_bg items-center">
+          <Flex className="justify-between font-extrabold text-lg xl:text-[22px] text-primary_bg items-center">
             <h4>{h4}</h4>
             <h5>{h5}</h5>
           </Flex>

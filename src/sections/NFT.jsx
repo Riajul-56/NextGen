@@ -17,7 +17,7 @@ const NFT = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     appendDots: (dots) => (
       <div>
@@ -27,10 +27,28 @@ const NFT = () => {
     customPaging: () => (
       <div className="w-6 h-6 bg-[#595572] rounded-full"></div>
     ),
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <section className="relative z-50">
+    <section className="relative z-50 px-2 MyXl:px-0">
       <Container>
         <Flex className="flex-col items-center">
           <Title title={"Collect some NFTs"} className="text-center" />
