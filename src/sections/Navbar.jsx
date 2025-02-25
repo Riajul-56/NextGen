@@ -28,9 +28,9 @@ let menu = [
 
 const Navbar = () => {
   const [navShow, setNavShow] = useState(false);
-  const handleNav=()=>{
+  const handleNav = () => {
     setNavShow(!navShow);
-  }
+  };
   return (
     <nav className="py-[42px] relative z-50 px-2 MyXl:px-0">
       <Container>
@@ -42,26 +42,36 @@ const Navbar = () => {
             className="lg:hidden block text-3xl btnlinear"
             onClick={handleNav}
           >
-            {navShow ? <FaBars /> : <ImCross />}
+            {navShow ? <ImCross /> : <FaBars />}
           </div>
-          <menu>
-            <ul className="flex gap-14 flex-col lg:hidden bg-[#16192A] border border-[#2E3150] absolute top-20 left-0 w-full py-4 px-4 z-[100]">
-              {menu.map((item, index) => (
-                <li key={item.name}>
-                  <NavLink
-                    to={item.link}
-                    className={({ isActive }) =>
-                      isActive ? "navItem activeNavItem" : "navItem"
-                    }
-                  >
-                    {item.name}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </menu>
+          {navShow && (
+            <menu className="flex gap-5 flex-col lg:hidden bg-[#16192A] border border-white absolute top-25 right-5 w-[80vw] py-4 px-4 rounded-2xl z-50">
+              <ul>
+                {menu.map((item, index) => (
+                  <li key={item.name} className="mt-4 mb-4">
+                    <NavLink
+                      to={item.link}
+                      className={({ isActive }) =>
+                        isActive ? "navItem activeNavItem" : "navItem"
+                      }
+                    >
+                      {item.name}
+                    </NavLink>
+                  </li>
+                ))}
+                <Flex className="gap-[17px] lg:hidden flex-col">
+                  <Button text={"log in"} className="text-center" />
+                  <Button
+                    text={"Sign up"}
+                    className="text-center"
+                    bgShow={false}
+                  />
+                </Flex>
+              </ul>
+            </menu>
+          )}
 
-          <menu className="hidden xl:block">
+          <menu className="hidden lg:block">
             <ul className="flex gap-14 ">
               {menu.map((item, index) => (
                 <li key={item.name}>
