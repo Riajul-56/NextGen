@@ -6,7 +6,7 @@ import bannerImg from "../assets/banner.png";
 
 const Banner = () => {
   return (
-    <section className="xl:py-[53px] relative z-50 px-2 MyXl:px-0">
+    <section className="xl:py-[53px] relative z-20 px-2 MyXl:px-0">
       <Container>
         <Flex className="items-center flex-col lg:flex-row">
           <div className="max-w-[785px] order-1 lg:order-0">
