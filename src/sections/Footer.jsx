@@ -98,18 +98,18 @@ let footerData = [
 
 const Footer = () => {
   return (
-    <footer className="relative ">
+    <footer className="relative px-2 MyXl:px-0">
       <img src={shadow} className="absolute -top-[700px] right-0" />
-      <div className="border-b border-[#535488] pb-[100px] mb-9 ">
+      <div className="border-b border-[#535488] xl:pb-[100px] pb-10 mb-9">
         <Container>
-          <Flex className="gap-[196px]">
-            <div className="w-[400px]">
-              <img src={logo} />
-              <p className="mt-[25px] mb-[25px] font-normal text-[19px]">
-                Ultrices eget pretium sit euismod mi id posuere ac in in nisl
+          <Flex className="xl:gap-[196px] gap-16 flex-col xl:flex-row">
+            <div className="xl:w-[400px] max-w-auto">
+              <img src={logo} className="xl:mx-0 mx-auto "/>
+              <p className="mt-[25px] mb-[25px] font-normal text-[19px] text-center xl:text-left">
+                Ultrices eget pretium sit euixlod mi id posuere ac in in nisl
                 sed augue. Posuere ac in in nisl sed augue.
               </p>
-              <Flex className="gap-[13px]">
+              <Flex className="gap-[13px] xl:justify-start justify-center">
                 <SocialMedia img={fb} />
                 <SocialMedia img={insta} />
                 <SocialMedia img={twiter} />
@@ -118,10 +118,10 @@ const Footer = () => {
               </Flex>
             </div>
 
-            <Flex className="gap-[150px] z-50">
+            <Flex className="xl:gap-[150px] gap-16 z-50 flex-wrap xl:flex-nowrap justify-around  ">
               {footerData.map((item) => (
                 <div>
-                  <h2 className="text-text_title font-black text-[22px] mb-6">
+                  <h2 className="text-text_title font-black text-[22px]  mb-6">
                     {item.heading}
                   </h2>
                   <ul>
